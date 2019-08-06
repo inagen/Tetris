@@ -2,8 +2,8 @@
 #include "gameState.h"
 #include "SFML/Graphics.hpp"
 
-const int windowWidth = 100; 
-const int windowHeight = 100;
+const int windowWidth = 320; 
+const int windowHeight = 640;
 
 class Game {
 private:
@@ -11,5 +11,7 @@ private:
 	sf::RenderWindow* window;
 public:
 	Game();
+	void setup();
 	void mainLoop();
+
 };
